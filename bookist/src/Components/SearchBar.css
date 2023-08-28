@@ -1,0 +1,8 @@
+.searchBar-container{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}

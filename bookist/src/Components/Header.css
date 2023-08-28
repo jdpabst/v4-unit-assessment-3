@@ -1,0 +1,12 @@
+.header-container{
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 15px 20px -20px rgb(193, 193, 193);
+}
+
+h1{
+    color:#4aaa9e;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 27px;
+    padding-top: 6px;
+}
