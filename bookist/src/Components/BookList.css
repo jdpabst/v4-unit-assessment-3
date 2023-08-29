@@ -1,0 +1,11 @@
+.books-container{
+    height: auto;
+    width: 80vw;
+    border: 1px solid black;
+    list-style-type: none;
+}
+
+.book-cover{
+    height: 50px;
+    width: 50px;
+}
