@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './Components/Header';
 import SearchBar from './Components/SearchBar';
 import BookList from './Components/BookList';
+import Shelf from './Components/Shelf'
 import data from './data.js';
 import './App.css';
 
@@ -12,9 +13,9 @@ function App() {
 
   const filterBooks = (userSearch) => {
     console.log(`This is the userSearch on App.js: ${userSearch}`)
-    let filteredBooks = data.filter(item => {
+    let filteredBooks = books.filter(item => {
       let title = item.title.toLowerCase();
-      return title.includes(userSearch.toLowercase)
+      return title.includes(userSearch.toLowerCase())
     })
     setBooks(filteredBooks);
   }
@@ -24,11 +25,22 @@ function App() {
     setBooks(data);
   }
 
+  const addToShelf = (book) => {
+    let updatedShelf = [...shelf, book]
+    setShelf(updatedShelf)
+    console.log(shelf);
+  }
+
+  const clearShelf = () => {
+    setShelf([])
+  }
+
   return (
     <div className="App">
       <Header />
       <SearchBar filterBooks= { filterBooks } reset={ reset }/>
-      <BookList books={ books }/>
+      <BookList books={ books } addToShelf={ addToShelf }/>
+      <Shelf shelf={ shelf } clearShelf= { clearShelf } />
     </div>
   );
 }

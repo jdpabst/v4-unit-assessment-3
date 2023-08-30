@@ -1,11 +1,37 @@
 .books-container{
     height: auto;
     width: 80vw;
-    border: 1px solid black;
+    margin-top: 40px;
+    padding-left: 15px;
+    /* border: 1px solid black; */
     list-style-type: none;
+    display: flex;
+    justify-content: space-bewteen;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.book-info-container{
+    /* border: 1px dotted blue; */
+    width: 175px;
+}
+
+.book-cover-container{
+    width: 150px;
+    margin: 0 auto;
+    /* border: 1px dotted pink; */
 }
 
 .book-cover{
-    height: 50px;
-    width: 50px;
+    /* border: 1px dotted teal; */
+    width: 100%;
+    height: auto;
+}
+
+.book-title{
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 55px;
+    width: 80%;
 }
